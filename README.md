@@ -1,7 +1,7 @@
 # NativeScript plugin for Urban Airship
 [![npm version](https://badge.fury.io/js/nativescript-urban-airship.svg)](https://www.npmjs.com/package/nativescript-urban-airship)
 
-This is a plugin to use the [Urban Airship](https://www.urbanairship.com/) SDK (Android v15.0.0, iOS v15.0.1) with NativeScript.  
+This is a plugin to use the [Urban Airship](https://www.urbanairship.com/) SDK (Android v18.7.1, iOS v18.7.1) with NativeScript.
 For iOS this plugin uses APNS and for Android it uses FCM.
 
 ## Requirements
@@ -25,7 +25,7 @@ First create a file with all your Urban Airship setting ([example](./demo/app/ur
     ```ts
     public onCreate(): void {
         super.onCreate();
-    
+
         NsUrbanAirship.getInstance().startUp(urbanAirshipSettings, this);
     }
     ```

@@ -26,7 +26,7 @@ export class NsUrbanAirship implements CommonUrbanAirship {
         config.URLAllowList = NSArray.arrayWithArray([urbanAirshipSettings.urlAllowList]);
         config.URLAllowListScopeJavaScriptInterface = NSArray.arrayWithArray([urbanAirshipSettings.urlAllowListScopeJavaScriptInterface]);
         config.URLAllowListScopeOpenURL = NSArray.arrayWithArray([urbanAirshipSettings.urlAllowListScopeOpenURL]);
-        
+
         UAirship.takeOffLaunchOptions(config, null);
         if (!this.pushIsValid()) {
             return;
@@ -65,7 +65,7 @@ export class NsUrbanAirship implements CommonUrbanAirship {
             resolve(this.isOptIn());
         });
     }
-    
+
     public isOptIn(): boolean {
         if (!this.pushIsValid()) {
             return false;
