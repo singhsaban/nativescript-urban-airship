@@ -25,7 +25,7 @@ First create a file with all your Urban Airship setting ([example](./demo/app/ur
     ```ts
     public onCreate(): void {
         super.onCreate();
-    
+
         NsUrbanAirship.getInstance().startUp(urbanAirshipSettings, this);
     }
     ```
