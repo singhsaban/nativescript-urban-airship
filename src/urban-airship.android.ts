@@ -13,7 +13,7 @@ export class NsUrbanAirship implements CommonUrbanAirship {
         }
         NsUrbanAirship.instance = this;
     }
- 
+
     static getInstance() {
         return NsUrbanAirship.instance;
     }
